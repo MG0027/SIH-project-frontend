@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sih {
+  height: 2.5rem;
+  width: 2.5rem;
+  
+}
+
+.hheading h1{
+  margin-top: 0.6rem;
+}
+
+.list{
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+  font-size: 14px;
+  letter-spacing: .3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 28px 0;
+  border-bottom: 5px solid #ffffff;
+  
+}
+
+.list a:hover {
+  border-bottom: 4px solid #f54e77;
+}
+
+.list a sup {
+  color: #ff3f6c;
+  font-size: 10px;
+}
+
+.footer{
+text-align: center;
+margin-top: 3rem;
+}
+
+.weather-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.weather-info {
+  background: #f4f4f4;
+  background-blend-mode:color-dodge ;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.weather-info h2 {
+  margin: 0 0 10px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 1rem;
+}
+.intro h1{
+  font-size: x-large;
+  display: inline;
+  
+  padding: 2px;
+ 
+}
+.intro p {
+  font-size: larger;
+ padding: 1rem;
+}
+
+.hheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+
+}
+
+
+
+.dashboard-background {
+  background-image: url('Images/wheat-field-poster-with-ample-space-custom-text-images_864588-20230.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.Sensor {
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+}
+
+.Sensor h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.Sensor div {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.sensor-h{
+  text-align: center;
+}
+
+.camera-background {
+  background-image: url('Images/spring-floral-border-background-green-with-leaf-watercolor-illustration_53876-126807.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.weather-background {
+  background-image: url('Images/pngtree-clear-blue-sky-with-white-clouds-panoramic-view-of-bright-clear-image_403142.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
