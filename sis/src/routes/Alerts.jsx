@@ -1,5 +1,8 @@
+
 const Alerts =() => {
-  return(<></>)
+ 
+
+  return(<><center>Currently you have no alerts !!</center> </>)
 }
 
 export default Alerts;

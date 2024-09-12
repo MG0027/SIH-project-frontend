@@ -5,15 +5,9 @@
 }
 
 
-.sih {
-  height: 2.5rem;
-  width: 2.5rem;
-  
-}
 
-.hheading h1{
-  margin-top: 0.6rem;
-}
+
+ 
 
 .list{
   display: flex;
@@ -24,23 +18,25 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 28px 0;
-  border-bottom: 5px solid #ffffff;
+  padding: 20px 0;
+  border-bottom: 3px solid #ffffff;
+  
   
 }
 
 .list a:hover {
-  border-bottom: 4px solid #f54e77;
+  border-bottom: 2px solid rgb(230,229,163);
 }
 
 .list a sup {
-  color: #ff3f6c;
+  
   font-size: 10px;
 }
 
 .footer{
 text-align: center;
 margin-top: 3rem;
+position: absolute bottom;
 }
 
 .weather-container {
@@ -54,6 +50,7 @@ margin-top: 3rem;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(75, 150, 93) ;
 }
 
 
@@ -87,25 +84,27 @@ margin-top: 3rem;
   align-items: center;
   justify-content: center;
   font-size: 0.7rem;
+  color: whitesmoke;
 
 }
 
 
 
-.dashboard-background {
+/*.dashboard-background {
   background-image: url('Images/wheat-field-poster-with-ample-space-custom-text-images_864588-20230.avif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   margin: 0;
-}
+}*/
 
-.Sensor {
+/*.Sensor {
   padding: 20px;
   background-color: #f7f9fc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(75, 150, 93);
   max-width: 400px;
   margin: auto;
 }
@@ -123,9 +122,9 @@ margin-top: 3rem;
 
 .sensor-h{
   text-align: center;
-}
+}*/
 
-.camera-background {
+/*.camera-background {
   background-image: url('Images/spring-floral-border-background-green-with-leaf-watercolor-illustration_53876-126807.avif');
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,3 +141,62 @@ margin-top: 3rem;
   height: 100vh;
   margin: 0;
 }
+*/
+.cool-calendar {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 300px; /* Set the desired height */
+  overflow: hidden; /* Ensure content fits within the height */
+  
+}
+
+.cool-calendar .react-calendar__month-view__days__day {
+  height: 40px; /* Adjust day cell height */
+}
+
+.cool-calendar .react-calendar__tile {
+  border-radius: 10px;
+  background: #f0f8ff;
+  transition: background 0.3s ease;
+  height: 40px; /* Set height for each day tile */
+}
+
+.cool-calendar .react-calendar__tile:enabled:hover,
+.cool-calendar .react-calendar__tile--active {
+  background: #00bfff;
+  color: white;
+}
+
+.head{
+  text-align: center;
+
+  padding-top: 2px;
+}
+
+.cards{
+  display: flex;
+  
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #333;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+

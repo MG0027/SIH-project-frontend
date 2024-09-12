@@ -1,0 +1,21 @@
+{
+  "welcome": "Welcome",
+  "dashboard": "Dashboard",
+  "Smart Irrigation System":"Smart Irrigation System",
+  "irrigation Control":"irrigation Control",
+  "Sensor Status":"Sensor Status",
+  "Weather Info":"Weather Info",
+  "Alerts":"Alerts",
+  "camera":"camera",
+  "Welcome User!": "Welcome User!",
+"Moisture Report":"Moisture Report",
+"Click each rectangle":"Click each rectangle",
+"(Moisture level is in %)":"(Moisture level is in %)",
+
+"MoistureLevel of 'Day-1' : 45":"MoistureLevel of 'Day-1",
+
+
+"Weather Report":"Weather Report",
+ "Calendar": "Calendar",
+ "Stats": "Stats"
+} 

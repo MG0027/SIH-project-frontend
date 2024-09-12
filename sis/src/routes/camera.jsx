@@ -12,7 +12,7 @@ const CameraPanel = () => {
   useEffect(() => {
     document.body.className = 'camera-background';
     return () => {
-      document.body.className = ''; // Clean up by resetting class when unmounted
+      document.body.className = ''; 
     };
   }, []);
 
@@ -39,7 +39,7 @@ const CameraPanel = () => {
       } else {
         console.error("Video element is not available after attempting to start camera.");
       }
-    }, 300); // Adding a delay to ensure video element is rendered
+    }, 300); 
   };
 
   const captureImage = () => {
@@ -67,10 +67,10 @@ const CameraPanel = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      setLeafType("Maple Leaf");
+      setLeafType("Banana Plant");
       setDiseaseResult({
-        disease: "No Disease Detected",
-        confidence: 95
+        disease: "Sigatoka leaf spot",
+        confidence: 79.56
       });
     }, 2000);
   };
@@ -82,7 +82,7 @@ const CameraPanel = () => {
     setCameraOpened(false);
   };
 
-  return (
+  return (<>
     <div style={{ padding: '10px', maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
       <h2>Leaf and Disease Detection</h2>
 
@@ -90,7 +90,17 @@ const CameraPanel = () => {
         <div>
           {!cameraOpened ? (
             <div>
-              <button onClick={() => setCameraOpened(true)} style={{ marginRight: '10px' , paddingLeft:'5px',paddingRight:'5px'}}>
+              <button onClick={() => setCameraOpened(true)} style={{ marginRight: '40px' ,marginTop: '40px', paddingLeft:'5px',paddingRight:'5px', backgroundColor: '#557151',
+    border: 'none',
+    
+    
+    padding: '6px 12px',
+    borderRadius: '40px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    color: '#E6E5A3',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease'}}>
                 Open Camera
               </button>
               <input 
@@ -100,15 +110,35 @@ const CameraPanel = () => {
                 ref={fileInputRef} 
                 style={{ display: 'none' }} 
               />
-              <button onClick={() => fileInputRef.current.click()} style={{paddingLeft:'5px',paddingRight:'5px'}}>
+              <button onClick={() => fileInputRef.current.click()} style={{paddingLeft:'5px',paddingRight:'5px', backgroundColor: '#557151',
+    border: 'none',
+    
+   
+    padding: '6px 12px',
+    borderRadius: '40px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    color: '#E6E5A3',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease'}}>
                 Upload Image
               </button>
             </div>
           ) : (
             <div>
-              <video ref={videoRef} style={{ width: '100%', marginBottom: '10px', maxHeight: '400px', // Adjust the max height to your preference
+              <video ref={videoRef} style={{ width: '100%', marginBottom: '10px', maxHeight: '400px', 
     objectFit: 'cover'   }} />
-              <button onClick={captureImage}style={{ paddingLeft:'5px',paddingRight:'5px'}}>
+              <button onClick={captureImage}style={{ paddingLeft:'5px',paddingRight:'5px', border: '2px solid black',borderRadius: '40px', backgroundColor: '#557151',
+    border: 'none',
+    
+    
+    padding: '6px 12px',
+    borderRadius: '40px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    color: '#E6E5A3',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease'}}>
                 Capture Image
               </button>
             </div>
@@ -145,13 +175,23 @@ const CameraPanel = () => {
                 )}
               </>
             )}
-            <button onClick={resetData} style={{ marginTop: '10px', paddingLeft:'5px',paddingRight:'5px' }}>
+            <button onClick={resetData} style={{ marginTop: '10px', paddingLeft:'5px',paddingRight:'5px',backgroundColor: '#557151',
+    border: 'none',
+    
+    
+    padding: '6px 12px',
+    borderRadius: '40px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    color: '#E6E5A3',
+    fontWeight: 'bold',
+    transition: 'background-color 0.3s ease' }}>
               Reset
             </button>
           </div>
         </div>
       )}
-    </div>
+    </div></>
   );
 };
 

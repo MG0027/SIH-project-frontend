@@ -7,7 +7,7 @@ const Weather = () => {
   useEffect(() => {
     document.body.className = 'weather-background';
     return () => {
-      document.body.className = ''; // Clean up by resetting class when unmounted
+      document.body.className = ''; 
     };
   }, []);
   const dispatch = useDispatch();

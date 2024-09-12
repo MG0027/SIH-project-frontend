@@ -1,0 +1,23 @@
+{
+  "welcome": "स्वागत है",
+  "Dashboard": "डैशबोर्ड",
+  
+  "Smart Irrigation System":"स्मार्ट सिंचाई प्रणाली",
+  "irrigation Control":" सिंचाई नियंत्रण",
+  "Sensor Status":" सेंसर स्थिति",
+  "Weather Info":" मौसम की जानकारी",
+  "Alerts":" अलर्ट",
+  "camera":" कैमरा",
+  "Welcome User!":"उपयोगकर्ता का स्वागत है!" ,
+"Moisture Report":"नमी रिपोर्ट",
+"Click each rectangle":"प्रत्येक आयत पर क्लिक करें",
+"(Moisture level is in %)":"(नमी का स्तर % में है)",
+
+"MoistureLevel of 'Day-1' : 45":"दिन-1 का नमी स्तर: 45",
+
+
+"Weather Report":"मौसम रिपोर्ट",
+"Calendar": "कैलेंडर",
+"Stats": "आँकड़े"
+
+}
